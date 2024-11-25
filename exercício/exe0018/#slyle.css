@@ -1,0 +1,12 @@
+*{
+    font-family: 'Helvetica Neue ';
+}
+body{
+   background-origin: linear-gradient(to right,black,white,grey)
+}
+main{
+    background-color: #ddd;
+    border: 10px;
+    box-shadow: 5px 10px 10 #fafafa;
+
+}
