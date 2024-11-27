@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="estilos/retrado.css">
+
+</head>
+<body>
+   <h1>trabalho de formulário e media query</h1>
+   <form action="cadastro.php" method="get" autocomplete="on"></form>
+   <fieldset>
+    <legend>Dados Pessoais</legend>
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+        </p>
+
+        <p>
+            <label for="iendereço">Endereço</label>
+            <input type="endereço" name="endereço" id="iendereço" autocomplete="endereço" required>
+        </p>
+
+        <p>
+            <label for="estado">Estado</label>
+            <select name="estado" id="Estado" required>
+            <option value="" disabled selected>Selecione Opção</option>
+            <option value="são paulo">São Paulo</option>
+            </select>
+        </p>
+        <h2></h2>
+        <form action="cadastro.php" method="get" autocomplete="on"></form>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <p>Natureza do Cargo</p>
+            <p>
+                <input type="radio" name="cargo" value="1" checked/>Gerência
+                <input type="radio" name="cargo" value="2" checked/>Financeiro
+                <input type="radio" name="cargo" value="3" checked/>Recepçã
+                <input type="radio" name="cargo" value="4" checked/>Administrativo
+                <input type="radio" name="cargo" value="5" checked/>Juridico
+            </p>
+            <p>Área de interesse</p>
+            <p>
+                <input type="checkbox" name="area1" value="com"/>Computação
+                <input type="checkbox" name="area2" value="bio"/>BIologia
+                <input type="checkbox" name="area3" value="mei"/>Meio Ambiente
+                <input type="checkbox" name="area4" value="eng"/>Engenharia
+                <input type="checkbox" name="area5" value="his"/>História
+            </p>
+            <p>
+                <label for="imini icurriculo">Mini Curriculo</label>
+                <textarea name="mc" id="imini icurriculo" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+   </fieldset>
+</body>
+</html>
