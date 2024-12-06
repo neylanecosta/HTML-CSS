@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria avançada com elementos modernos de HTML e CSS">
+    <title>Meu trabalho</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 80px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ol {
+            display: inline-flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 30px auto;
+            max-width: 1200px;
+            background: #fff;
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6a11cb;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .parallax {
+            background: url('https://via.placeholder.com/1920x800') no-repeat center fixed;
+            background-size: cover;
+            height: 500px;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        table th, table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form select, form button {
+            padding: 15px;
+            width: 60%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        form button {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        form button:hover {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        iframe {
+            border: 5px solid #2575fc;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu trabalho</h1>
+        <p>Explore o melhor do HTML e CSS em um só lugar.</p>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#midias">Mídias</a></li>
+            <li><a href="#formulario">Formulários</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#parallax">Parallax</a></li>
+            <li><a href="#iframe">Iframe</a></li>
+        </ol>
+    </nav>
+
+    <section id="listas">
+        <h2>Listas Estilizadas</h2>
+        <p>Use listas ordenadas e não ordenadas para organizar informações.</p>
+        <ol>
+            <li>HTML Básico</li>
+            <li>CSS Intermediário</li>
+            <li>JavaScript Avançado</li>
+        </ol>
+        <ul>
+            <li>Design Responsivo</li>
+            <li>SEO Otimizado</li>
+            <li>Sites Interativos</li>
+        </ul>
+    </section>
+
+    <section id="midias">
+        <h2>Mídias em HTML</h2>
+        <p>Incorpore áudio, vídeo e imagens em seu site.</p>
+        <audio controls>
+            <source src="Audio-Engracado-E-o-pix-www.audiosengracados.com_.br_.mp3" type="audio/mpeg">
+        </audio>
+        <video controls style="margin-top: 20px; width: 100%; border-radius: 15px;">
+            <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=JC2UlkGZAkhQis3B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulários Modernos</h2>
+        <p>Crie formulários interativos e acessíveis.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+            <label for="opcao">Opção:</label>
+            <select id="opcao">
+                <option>Opção 1</option>
+                <option>Opção 2</option>
+                <option>Opção 3</option>
+            </select>
+            <button>Enviar</button>
+        </form>
+    </section>
+
+    <section id="tabelas">
+        <h2>Tabelas Dinâmicas</h2>
+        <p>Organize informações de maneira clara.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>30</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="parallax" class="parallax"></section>
+
+    <section id="iframe">
+        <h2>Iframe de Redes Sociais</h2>
+        <iframe src="https://www.instagram.com/" width="100%" height="500"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - HTML Avançado. Criado com dedicação por você.</p>
+    </footer>
+</body>
+
+</html>
